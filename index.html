@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="nicepage.css" media="screen">
 <link rel="stylesheet" href="Home.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-CrIi5wDs2/wX/T+0LvAgyKrOJlJejn/gaQvhU/hIjJ4Bc7xuIv8EZzZzOYw0+eSiVK1b8Dze+DU1loqzQgIN5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/6.0.0/intro.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 6.9.2, nicepage.com">
@@ -162,6 +162,27 @@ button:hover {
 	transform:scale(0);
 }
 
+.u-flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust spacing between videos as needed */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.u-video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media query for small screens */
+@media (max-width: 480px) {
+    .u-video {
+        width: 100%; /* Full width on small screens */
+        height: auto;
+    }
+}
+
+
 @media screen and (max-width:768px){
    .wrapper{
         grid-template-columns: repeat(2,1fr);
@@ -293,6 +314,84 @@ button:hover {
         </div>
       </h2>
     </section>
+
+    <section class="u-clearfix u-sheet u-sheet-1">
+      <h2 class="u-align-center u-text u-text-default u-text-palette-1-dark-1 u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="0">
+          AVI-TWINS Models
+      </h2>
+      <p class="u-align-center u-text u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250">
+        <p class="u-align-center u-text u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250">
+          AVI-TWINS utilizes advanced multimodal AI algorithms to drive innovation and support clients in achieving optimal results and unprecedented growth. Our models integrate diverse IoT devices, including sensors, actuators, PTZ cameras, drones (Air Force One), and robots (Ground Force One), enabling comprehensive monitoring and management of poultry farms. These models are deployed on the cloud and at the edge.
+      </p>
+      
+      </p>
+      <div class="u-align-center u-flex-container">
+        <div style="text-align: center;">
+          <video controls class="u-video" width="340" height="340" autoplay>
+              <source src="./images/behaviour.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+          <p>Behavior Detection Model</p>
+        </div>
+        <div style="text-align: center;">
+          <video controls class="u-video" width="340" height="340" autoplay>
+              <source src="./images/weigh.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+          <p>Weight estimation Model</p>
+        </div>
+        <div style="text-align: center;">
+          <video controls class="u-video" width="340" height="340" autoplay>
+              <source src="./images/anomal.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+          <p>Anomalies Detection Model</p>
+        </div>
+        <div style="text-align: center;">
+          <video controls class="u-video" width="340" height="340" autoplay>
+              <source src="./images/bhdrone.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+          <p>Drone based Behavior Detection</p>
+        </div>
+        <div style="text-align: center;">
+          <video controls class="u-video" width="340" height="340" autoplay>
+              <source src="./images/anomal.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+          <p>Disease Detection Model</p>
+        </div>
+        <div style="text-align: center;">
+          <video controls class="u-video" width="340" height="340" autoplay>
+              <source src="./images/robo.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+          <p>Robot for prelevement take off </p>
+        </div>
+        <div style="text-align: center;">
+          <video controls class="u-video" width="340" height="340" autoplay>
+              <source src="./images/Sounddetec.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+          <p>Sound Anomaly Detection  </p>
+        </div>
+        <div style="text-align: center;">
+          <video controls class="u-video" width="340" height="340" autoplay>
+              <source src="./images/biosecu.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+          <p>Biosecuirty  Assessement </p>
+        </div>
+        <div style="text-align: center;">
+          <video controls class="u-video" width="340" height="340" autoplay>
+              <source src="./images/chat.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+          <p>Poultry Chatbot  </p>
+        </div>
+      </div>
+  </section>
+  
 
     <section class="u-align-center u-clearfix u-container-align-center u-white u-section-3" id="carousel_0cca">
        
@@ -454,7 +553,7 @@ button:hover {
                     <li>Early anomaly detection</li>
                     <li>Feeder & drinker management</li>
                     <li> Monthly assistance </li>
-                    <li>  Up to 3 farm registration </li>
+                    <li>  Up to 2 farm registration </li>
 
                     
 
@@ -475,7 +574,7 @@ button:hover {
                     <ul>
                         <li>  Bronze Pack features</li>
                         <li>Poultry Chatbot</li>
-                        <li>Bird flu detection</li>
+                        <li>Bird flu disease detection</li>
                         <li>Robot</li>
                         <li>Salmonella disease detection</li>
                         <li>Weekly assistance</li>
